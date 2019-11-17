@@ -5,101 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Damian Ruiz</title>
-    <link rel="stylesheet" href="./assets/styles/stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="assets/styles/stylesheet.css">
+    <link rel="stylesheet" href="./assets/styles/modal1.css">
+    <link rel="stylesheet" href="./assets/styles/modal2.css">
+    <link rel="stylesheet" href="./assets/styles/modal3.css">
+    <link rel="stylesheet" href="./assets/styles/modal4.css">
 </head>
 
 <body>
-    <header id="home">
-        <a href="#home"><img class="home_icon" src="./assets/icons/home.svg" alt="Home button"></a>
-        <ul>
-            <a href="#about">
-                <li>About</li>
-            </a>
-            <a href="#portfolio">
-                <li>Portfolio</li>
-            </a>
-            <a href="#contact">
-                <li>Contact</li>
-            </a>
-        </ul>
-    </header>
-    <section id="hero">
-        <div>
-            <h1><span id="helloWords">Hello</span>, I'm Damian</h1>
-            <h2 class="subtitle">Your friendly neighbourhood web developer</h2>
+    <!--This is the main section that loads on landing-->
+    <main id="mainSection" class="main">
+        <div class="hero">
+            <h1 id="rotatingText" class="hero-text">hi</h1>
+            <h1 id="heroMessage" class="display-none">i'm damian</h1>
+            <h2 id="subMessage" class="display-none">your friendly neighbourhood web developer</h2>
+        </div>
+        <div id="mainButtons" class="display-none">
+            <div class="left-top">
+                <a id="about" class="main-links" href="#"><img class="main-icons" src="./assets/icons/about-me.svg"
+                        alt="about me"><br>about me</a>
+                <a id="portfolio" class="main-links" href="#"><img class="main-icons" src="./assets/icons/portfolio.svg"
+                        alt="portfolio"><br>portfolio</a>
+            </div>
+            <div class="right-bottom">
+                <a id="contact" class="main-links" href="#"><img class="main-icons" src="./assets/icons/contact.svg"
+                        alt="contact"><br>contact</a>
+                <a id="puppies" class="main-links" href="#"><img class="main-icons" src="./assets/icons/puppy.svg"
+                        alt="puppies"><br>puppies</a>
+            </div>
+        </div>
+    </main>
+    <!--Modals start here, they will be display=none by default-->
+    <!--ABOUT ME modal-->
+    <section style="display: none;" id="modalAboutMe">
+        <img class="close-modal" src="./assets/icons/close.svg" alt="close modal">
+        <h3 class="modal-title">about me</h3>
+        <img class="me" src="./assets/icons/me.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium laborum dolorum quod tempora minus
+            expedita
+            quo adipisci amet, quas reprehenderit accusamus veniam iure cupiditate necessitatibus accusantium neque, eum
+            delectus porro!</p>
+        <h4>tech skills</h4>
+        <div class="tech-skills">
+            <img class="tech-icon" src="./assets/icons/html.svg" alt="html5 logo">
+            <img class="tech-icon" src="./assets/icons/css.svg" alt="css logo">
+            <img class="tech-icon" src="./assets/icons/javascript.svg" alt="javascript logo">
+            <img class="tech-icon" src="./assets/icons/bootstrap.svg" alt="bootstrap logo">
+            <img class="tech-icon" src="./assets/icons/jquery.jpg" alt="jquery logo">
+            <img class="tech-icon node" src="./assets/icons/node.svg" alt="node logo">
         </div>
     </section>
-    <section id="about">
-        <h2 class="title">About me</h2>
-        <div class="about_container">
-            <img class="me" src="./assets/icons/me.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus modi rerum repellat, delectus
-                quibusdam atque voluptatibus vel quas. Et animi quam fuga accusamus. Quae nemo, animi a ut
-                architecto porro.</p>
-            <h3>Tech Skills</h3>
-            <div class="skills">
-                <img src="./assets/icons/html.svg" alt="HTML">
-                <img src="./assets/icons/css.svg" alt="css">
-                <img src="./assets/icons/javascript.svg" alt="javascript">
-                <img src="./assets/icons/bootstrap.svg" alt="bootstrap">
-                <img src="./assets/icons/jquery.svg" alt="jquery">
-                <img src="./assets/icons/node.svg" alt="nodejs">
-            </div>
-    </section>
-    <section id="portfolio">
-        <h2 class="title">Portfolio</h2>
-        <div class="project_container">
-            <div class="project_group">
-                <div class="project">
-                    <h3>Password Generator</h3>
-                    <img src="./assets/icons/password.png" alt="">
-                    <p>Simple web app that creates a random password based on user preferences. Created with: HTML5,
-                        CSS3 and JavaScript.</p>
-                    <a href="https://jondam1985.github.io/password-generator" target="_blank">Visit website</a>
-                </div>
-                <div class="project">
-                    <h3>Quiz Game</h3>
-                    <img src="./assets/icons/quiz.png" alt="">
-                    <p>Online quiz game where players must answer 5 JavaScript related questions in 75 seconds or less.
-                        Every wrong question substracts 15 seconds from the timer. Scores saved in local storage.
-                        Created using: HTML5, CSS3 and JavaScript.</p>
-                    <a href="https://jondam1985.github.io/are-you-smarter-than-a-bootcamper" target="_blank">Visit
-                        website</a>
-                </div>
-            </div>
-            <div class="project_group">
-                <div class="project">
-                    <h3>Weather Dashboard</h3>
-                    <img src="./assets/icons/weather.png" alt="">
-                    <p>Web application that shows current weather and five-day forecast for the user's current location
-                        (via Geolocation API) or by city search. Data extracted from OpenWeather API. Created with:
-                        HTML5, CSS3, JavaScript and jQuery.</p>
-                    <a href="https://jondam1985.github.io/go-outside-weather-dashboard" target="_blank">Visit
-                        website</a>
-                </div>
-                <div class="project">
-                    <h3>Party Buddy</h3>
+    <!--PORTFOLIO modal-->
+    <section style="display: none;" id="modalPortfolio">
+        <img class="close-modal" src="./assets/icons/close.svg" alt="close modal">
+        <h3 class="modal-title">portfolio</h3>
+        <div class="projects-div">
+            <div class="project">
+                <h4 class="project-name">Party Buddy</h4>
+                <div class="img-container">
                     <img src="./assets/icons/party.png" alt="">
-                    <p>Web application that allows user to search recipes to plan and put together a dinner menu. Data
-                        obtained from multiple APIs. Created with: HTML5, CSS3, JavaScript, jQuery and Bootstrap.</p>
-                    <a href="https://jondam1985.github.io/party-buddy" target="_blank">Visit website</a>
                 </div>
+                <p class="project-description">Web application that allows user to search recipes to plan and put
+                    together a dinner menu. Data obtained from multiple APIs. Created with: HTML5, CSS3, JavaScript,
+                    jQuery and Bootstrap.</p>
+                <a class="project-page" href="https://jondam1985.github.io/party-buddy" target="_blank">visit
+                    website</a>
+            </div>
+            <div class="project">
+                <h4 class="project-name">Quiz Game</h4>
+                <div class="img-container">
+                    <img src="./assets/icons/quiz.png" alt="">
+                </div>
+                <p class="project-description">Online quiz game where players must answer 5 JavaScript related questions
+                    in 75 seconds or less. Every wrong question substracts 15 seconds from the timer. Scores saved in
+                    local storage. Created using: HTML5, CSS3 and JavaScript.</p>
+                <a class="project-page" href="https://jondam1985.github.io/are-you-smarter-than-a-bootcamper"
+                    target="_blank">visit
+                    website</a>
+            </div>
+            <div class="project">
+                <h4 class="project-name">Weather Dashboard</h4>
+                <div class="img-container">
+                    <img src="./assets/icons/weather.png" alt="">
+                </div>
+                <p class="project-description">Web application that shows current weather and five-day forecast for the
+                    user's current location (via Geolocation API) or by city search. Data extracted from OpenWeather
+                    API. Created with: HTML5, CSS3, JavaScript and jQuery.</p>
+                <a class="project-page" href="https://jondam1985.github.io/go-outside-weather-dashboard"
+                    target="_blank">visit
+                    website</a>
             </div>
         </div>
     </section>
-    <section id="contact">
-        <h2 class="title">Contact</h2>
-        <p>So many ways to be in touch. Pick your favorite</p>
-        <div class="contact_means">
-            <a href="tel:6477841984"><img src="./assets/icons/smartphone.svg" alt=""></a>
-            <a href="mailto:nrt.damian@gmail.com" target="_blank"><img src="./assets/icons/mail.svg" alt=""></a>
-            <a href="https://www.github.com/jondam1985" target="_blank"><img src="./assets/icons/github.svg" alt=""></a>
-            <a href="https://www.linkedin.com/in/damian-ruiz" target="_blank"><img src="./assets/icons/linkedin.svg" alt=""></a>
+    <!--CONTACT modal-->
+    <section style="display: none;" id="modalContact">
+        <img class="close-modal" src="./assets/icons/close.svg" alt="close modal">
+        <h3 class="modal-title">contact</h3>
+        <p class="contact-text">So many ways to stay in touch. Please pick your favourite from the selection below. If
+            you want to know more about me, my work or anything else (meaning of life, are crabs immortal?, etc.) just
+            reach out to me and I'll happily get back at you.</p>
+        <div class="contact-ways">
+            <a href="tel:6477841984"><img class="contact-icon" src="./assets/icons/phone.svg" alt="call 6477841984"></a>
+            <a href="mailto:nrt.damian@gmail.com" target="_blank"><img class="contact-icon" src="./assets/icons/mail.svg" alt="send an email to nrt.damian@gmail.com"></a>
+            <a href="http://m.me/nrt.damian" target="_blank"><img class="contact-icon" src="./assets/icons/messenger.svg" alt="facebook messenger m.me/nrt.damian"></a>
+            <a href="https://www.linkedin.com/in/damian-ruiz" target="_blank"><img class="contact-icon" src="./assets/icons/linkedin.svg" alt="linkedin account of Damian Ruiz"></a>
+            <a href="https://www.github.com/jondam1985" target="_blank"><img class="contact-icon" src="./assets/icons/github.svg" alt="github account of Damian Ruiz"></a>
+        </div>
+
+    </section>
+    <!--PUPPIES modal-->
+    <section style="display: none;" id="modalPuppies">
+        <img class="close-modal" src="./assets/icons/close.svg" alt="close modal">
+        <h3 class="modal-title">puppies</h3>
+        <div class="cuteness-container">
         </div>
     </section>
-    <footer>&copy; Damian Ruiz</footer>
+    <script src="./assets/scripts/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,48 @@
+/* CONTACT modal styles */
+
+#modalContact {
+	background-color: #8F2D56;
+	z-index: 1000;
+}
+
+.contact-text {
+    color: #fff;
+    font-size: 18px;
+    width: 70%;
+    margin: 30px auto;
+}
+
+.contact-ways {
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
+
+.contact-ways a {
+    width: 10%;
+    margin: 20px;
+    min-width: 70px;
+}
+
+.contact-icon {
+    display: flex;
+    flex-wrap: wrap;
+	width: 100%;
+    height: auto;
+    min-width: 70px;
+    margin: 0 10px;
+}
+
+.contact-icon:hover,
+.contact-icon:active {
+    transform: scale(1.2);
+}
+
+/* CONTACT modal responsive styles */
+
+@media only screen and (max-width: 450px) {
+	.contact-text {
+        font-size: 14px;
+    }
+}

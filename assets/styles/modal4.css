@@ -1,0 +1,22 @@
+/* PUPPIES modal styles */
+
+#modalPuppies {
+	background-color: #FFBC42;
+	z-index: 1000;
+}
+
+.cuteness-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.puppy {
+    display: block;
+    margin: 30px auto;
+    width: 30%;
+    height: auto;
+    min-width: 350px;
+    border: 2px solid #fff;
+}

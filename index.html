@@ -26,8 +26,10 @@
                         alt="about me"><br>about me</a>
                 <a id="portfolio" class="main-links" href="#"><img class="main-icons" src="./assets/icons/portfolio.svg"
                         alt="portfolio"><br>portfolio</a>
-            </div>
-            <div class="right-bottom">
+                <a id="resume" class="main-links" href="/assets/pdf/resumeDamian.pdf" target="_blank"><img
+                        class="main-icons" src="./assets/icons/resume.svg" alt="portfolio"><br>resume</a>
+                <!--</div>
+            <div class="right-bottom">-->
                 <a id="contact" class="main-links" href="#"><img class="main-icons" src="./assets/icons/contact.svg"
                         alt="contact"><br>contact</a>
                 <a id="puppies" class="main-links" href="#"><img class="main-icons" src="./assets/icons/puppy.svg"
@@ -41,7 +43,9 @@
         <img class="close-modal" src="./assets/icons/close.svg" alt="close modal">
         <h3 class="modal-title">about me</h3>
         <img class="me" src="./assets/icons/me.png" alt="">
-        <p> I’m a web developer who specializes in building beautiful and functional websites using HTML, CSS and JavaScript. My background was originally in Engineering and Finance, but I decided to make I change when I moved to Canada, and here I am now, developing websites and loving it.</p>
+        <p> I’m a web developer who specializes in building beautiful and functional websites using HTML, CSS and
+            JavaScript. My background was originally in Engineering and Finance, but I decided to make I change when I
+            moved to Canada, and here I am now, developing websites and loving it.</p>
         <h4>tech skills</h4>
         <div class="tech-skills">
             <img class="tech-icon" src="./assets/icons/html.svg" alt="html5 logo">
@@ -58,14 +62,46 @@
         <h3 class="modal-title">portfolio</h3>
         <div class="projects-div">
             <div class="project">
+                <h4 class="project-name">Business QaRds</h4>
+                <div class="img-container">
+                    <img src="./assets/icons/qard.png" alt="">
+                </div>
+                <p class="project-description">Built with: NodeJS, Express, Mysql, Express-handeblars, HTML5, CSS3,
+                    JavaScript, jQuery. Web app that allows
+                    users to create customized digital business cards and shared them via QR codes or links.</p>
+                <a class="project-page" href="https://business-qard.herokuapp.com" target="_blank">visit
+                    website</a>
+            </div>
+            <div class="project">
                 <h4 class="project-name">Party Buddy</h4>
                 <div class="img-container">
                     <img src="./assets/icons/party.png" alt="">
                 </div>
-                <p class="project-description">Web application that allows user to search recipes to plan and put
-                    together a dinner menu. Data obtained from multiple APIs. Created with: HTML5, CSS3, JavaScript,
-                    jQuery and Bootstrap.</p>
+                <p class="project-description">Built using: HTML5, CSS3, JavaScript,
+                    jQuery and Bootstrap. Web application that allows user to search recipes to plan and put
+                    together a dinner menu. Data obtained from multiple APIs.</p>
                 <a class="project-page" href="https://jondam1985.github.io/party-buddy" target="_blank">visit
+                    website</a>
+            </div>
+            <div class="project">
+                <h4 class="project-name">Express Note Taker</h4>
+                <div class="img-container">
+                    <img src="./assets/icons/noteTaker.png" alt="">
+                </div>
+                <p class="project-description">Build with: NodeJS, Express, HTML5, CSS3, Bootstrap, jQuery. Web app that
+                    for taking and managing notes online.</p>
+                <a class="project-page" href="https://kicking-ass-and-taking-notes.herokuapp.com" target="_blank">visit
+                    website</a>
+            </div>
+            <div class="project">
+                <h4 class="project-name">Team Assembler</h4>
+                <div class="img-container">
+                    <img src="./assets/icons/teamAssembler.png" alt="">
+                </div>
+                <p class="project-description">Build with: NodeJS, Enquirer, Jest. Command Line application
+                    that builds a web page listing the members of an Engineering team given input from the user.
+                </p>
+                <a class="project-page" href="https://github.com/jondam1985/engineering-team-assemble" target="_blank">visit
                     website</a>
             </div>
             <div class="project">
@@ -73,9 +109,10 @@
                 <div class="img-container">
                     <img src="./assets/icons/quiz.png" alt="">
                 </div>
-                <p class="project-description">Online quiz game where players must answer 5 JavaScript related questions
+                <p class="project-description">Built using: HTML5, CSS3 and JavaScript. Online quiz game where players
+                    must answer 5 JavaScript related questions
                     in 75 seconds or less. Every wrong question substracts 15 seconds from the timer. Scores saved in
-                    local storage. Created using: HTML5, CSS3 and JavaScript.</p>
+                    local storage.</p>
                 <a class="project-page" href="https://jondam1985.github.io/are-you-smarter-than-a-bootcamper"
                     target="_blank">visit
                     website</a>
@@ -85,9 +122,10 @@
                 <div class="img-container">
                     <img src="./assets/icons/weather.png" alt="">
                 </div>
-                <p class="project-description">Web application that shows current weather and five-day forecast for the
+                <p class="project-description">Built with: HTML5, CSS3, JavaScript and jQuery. Web application that
+                    shows current weather and five-day forecast for the
                     user's current location (via Geolocation API) or by city search. Data extracted from OpenWeather
-                    API. Created with: HTML5, CSS3, JavaScript and jQuery.</p>
+                    API.</p>
                 <a class="project-page" href="https://jondam1985.github.io/go-outside-weather-dashboard"
                     target="_blank">visit
                     website</a>
@@ -103,10 +141,14 @@
             reach out to me and I'll happily get back to you.</p>
         <div class="contact-ways">
             <a href="tel:6477841984"><img class="contact-icon" src="./assets/icons/phone.svg" alt="call 6477841984"></a>
-            <a href="mailto:nrt.damian@gmail.com" target="_blank"><img class="contact-icon" src="./assets/icons/mail.svg" alt="send an email to nrt.damian@gmail.com"></a>
-            <a href="http://m.me/nrt.damian" target="_blank"><img class="contact-icon" src="./assets/icons/messenger.svg" alt="facebook messenger m.me/nrt.damian"></a>
-            <a href="https://www.linkedin.com/in/damian-ruiz" target="_blank"><img class="contact-icon" src="./assets/icons/linkedin.svg" alt="linkedin account of Damian Ruiz"></a>
-            <a href="https://www.github.com/jondam1985" target="_blank"><img class="contact-icon" src="./assets/icons/github.svg" alt="github account of Damian Ruiz"></a>
+            <a href="mailto:nrt.damian@gmail.com" target="_blank"><img class="contact-icon"
+                    src="./assets/icons/mail.svg" alt="send an email to nrt.damian@gmail.com"></a>
+            <a href="http://m.me/nrt.damian" target="_blank"><img class="contact-icon"
+                    src="./assets/icons/messenger.svg" alt="facebook messenger m.me/nrt.damian"></a>
+            <a href="https://www.linkedin.com/in/damian-ruiz" target="_blank"><img class="contact-icon"
+                    src="./assets/icons/linkedin.svg" alt="linkedin account of Damian Ruiz"></a>
+            <a href="https://www.github.com/jondam1985" target="_blank"><img class="contact-icon"
+                    src="./assets/icons/github.svg" alt="github account of Damian Ruiz"></a>
         </div>
 
     </section>
